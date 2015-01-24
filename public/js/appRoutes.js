@@ -6,7 +6,7 @@
         // home page
         .when('/', {
             templateUrl: 'views/home.html',
-            controller: 'MainCTrl'
+            controller: 'MainController'
         })
 
 
