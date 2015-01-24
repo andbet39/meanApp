@@ -34,6 +34,10 @@ app.use(methodOverride('X-HTTP-Method-Override'));
 // set the static files location /public/img will be /img for users
 app.use(express.static(__dirname + '/public')); 
 
+app.use(require('connect-livereload')({
+    port: 35729
+  }));
+
 // routes ==================================================
 require('./app/routes')(app); // configure our routes
 
