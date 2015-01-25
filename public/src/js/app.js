@@ -1,1 +1,1 @@
-angular.module('sampleApp', ['ngRoute', 'appRoutes', 'MainCtrl']);
+var app = angular.module('sampleApp', ['ngRoute','ngResource','firebase', 'appRoutes','ChatCtrl', 'MainCtrl' , 'RecipeCtrl','RecipeSrv']);
