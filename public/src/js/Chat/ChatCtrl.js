@@ -9,5 +9,5 @@ var ref = new Firebase("https://luminous-heat-165.firebaseio.com/messages");
 
 	$scope.send  = function(message){
 		$scope.messages.$add(message);
-	}
+	};
 });

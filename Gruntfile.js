@@ -40,7 +40,7 @@ module.exports = function(grunt) {
     // watch css and js files and process the above tasks
     watch: {
       options: {
-      livereload: true,
+      livereload: false,
     },
       css: {
         files: ['public/src/css/**/*.less'],
@@ -86,6 +86,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-open');
   grunt.loadNpmTasks('grunt-concurrent');
 
-  grunt.registerTask('default', ['less', 'cssmin', 'jshint', 'uglify','open', 'concurrent']);
+  grunt.registerTask('default', ['less', 'cssmin', 'jshint', 'uglify', 'concurrent']);
 
 };
